@@ -1,0 +1,161 @@
+Language: Cpp
+Standard: Latest
+ColumnLimit: 90
+
+# Alignment
+AlignAfterOpenBracket: false
+AlignEscapedNewlines: Left
+DerivePointerAlignment: false
+PointerAlignment: Right
+ReferenceAlignment: Left
+AlignOperands: Align
+
+AlignConsecutiveAssignments:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+  PadOperators: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+  PadOperators: false
+AlignConsecutiveMacros:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+  PadOperators: false
+
+# Initializers
+PackConstructorInitializers: CurrentLine
+# BinPackLongBracedList: true
+BinPackParameters: OnePerLine
+BinPackArguments: false
+Cpp11BracedListStyle: true
+
+# Access Modifier Lines
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Never
+
+# Indentation
+AccessModifierOffset: -4
+BitFieldColonSpacing: Both
+ContinuationIndentWidth: 4
+IndentWidth: 4
+IndentAccessModifiers: false
+IndentCaseLabels: false
+IndentPPDirectives: BeforeHash
+IndentRequiresClause: true
+IndentWrappedFunctionNames: false
+TabWidth: 4
+UseTab: Always
+
+# Namespaces
+NamespaceIndentation: Inner
+ShortNamespaceLines: 1
+WrapNamespaceBodyWithEmptyLines: Never
+FixNamespaceComments: true
+
+# Allow
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+AllowShortNamespacesOnASingleLine: false
+# AllowShortRecordOnASingleLine: Empty
+
+# Braces
+InsertBraces: true
+BreakBeforeBraces: Allman
+
+# BraceWrapping:
+#   AfterCaseLabel: false
+#   AfterClass: false
+#   AfterControlStatement: Never
+#   AfterEnum: false
+#   AfterFunction: false
+#   AfterNamespace: false
+#   AfterStruct: false
+#   AfterUnion: false
+#   BeforeCatch: false
+#   BeforeElse: false
+#   BeforeLambdaBody: false
+#   BeforeWhile: false
+#   IndentBraces: false
+#   SplitEmptyFunction: false
+#   SplitEmptyRecord: false
+  # SplitEmptyNamespace: false
+  
+# Breaks
+AlwaysBreakBeforeMultilineStrings: true
+BreakAdjacentStringLiterals: true
+BreakAfterAttributes: Never
+BreakBeforeBinaryOperators: NonAssignment
+# BreakBeforeConceptDeclarations: Always
+# BreakBeforeTemplateCloser: false
+# BreakBeforeTernaryOperators: true
+# BreakConstructorInitializers: BeforeColon
+# BreakFunctionDefinitionParameters: false
+# BreakTemplateDeclarations: Yes
+BreakAfterOpenBracketBracedList: false
+BreakAfterOpenBracketFunction: false
+BreakAfterOpenBracketIf: true
+BreakAfterOpenBracketLoop: true
+BreakAfterOpenBracketSwitch: true
+SeparateDefinitionBlocks: Always
+
+# Macros
+SkipMacroDefinitionBody: true
+
+# Spaces
+SpaceAfterCStyleCast: false
+# SpaceAfterOperatorKeyword: false
+SpaceAfterTemplateKeyword: false
+SpaceAfterLogicalNot: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceBeforeInheritanceColon: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeCaseColon: false
+SpaceBeforeAssignmentOperators: true
+SpaceInEmptyBlock: false
+SpacesInParens: Never
+SpacesInAngles: Never
+SpacesInSquareBrackets: false
+SpacesInContainerLiterals: true
+
+# Sorting Includes
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex:          '^<clap/'
+    CaseSensitive:  false
+    Priority:       1
+    SortPriority:   1
+  - Regex:          '^<boost/'
+    CaseSensitive:  false
+    Priority:       2
+    SortPriority:   2
+  - Regex:          '^<'
+    CaseSensitive:  false
+    Priority:       3
+    SortPriority:   3
+  - Regex:          '.*'
+    CaseSensitive:  false
+    Priority:       4
+    SortPriority:   4
